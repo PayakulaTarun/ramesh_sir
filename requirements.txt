@@ -1,6 +1,8 @@
 flask
 flask-cors
 openpyxl
+pandas
+firebase-admin
 supabase
 httpx
 httpcore
