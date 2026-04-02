@@ -1,0 +1,7 @@
+# Root requirements for Render/Vercel
+flask
+flask-cors
+pandas
+openpyxl
+gunicorn
+firebase-admin

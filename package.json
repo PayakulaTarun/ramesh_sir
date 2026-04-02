@@ -1,0 +1,12 @@
+{
+  "name": "ubpl-dashboard-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"python api/index.py\" \"cd dash-frontend && npm run dev\"",
+    "build": "cd dash-frontend && npm install && npm run build && cd .. && rm -rf dist && cp -r dash-frontend/dist ./dist",
+    "install": "cd dash-frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

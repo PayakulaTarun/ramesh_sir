@@ -1,0 +1,35 @@
+# Node
+**/node_modules
+**/dist
+**/.vite
+
+# Python
+**/__pycache__
+**/*.pyc
+**/.venv
+**/env
+**/venv
+
+# Excel & Temporary
+**/*.xlsx
+!dash1/ubpl_Database.xlsx
+!dash1/ubpl_Dashboard_Output.xlsx
+!api/ubpl_Database.xlsx
+!api/ubpl_Dashboard_Output.xlsx
+**/*.swp
+**/*.log
+
+# Project specific
+dash1/UBPL_Dashboard_App.zip
+*.json
+!package.json
+!package-lock.json
+!vercel.json
+!eslint.config.js
+!render.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+
+.vercel

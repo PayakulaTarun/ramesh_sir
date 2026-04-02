@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ubpl-dashboard
+    env: python
+    buildCommand: "cd dash-frontend && npm install && npm run build"
+    startCommand: "gunicorn -b 0.0.0.0:$PORT dash1.ubpl_app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: NODE_ENV
+        value: production

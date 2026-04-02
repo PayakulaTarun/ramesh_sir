@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "buildCommand": "cd dash-frontend && npm install && npm run build",
+  "outputDirectory": "dash-frontend/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.12"
+  }
+}
